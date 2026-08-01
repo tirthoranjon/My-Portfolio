@@ -1,31 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.tracking-wide { letter-spacing: 1.5px; }
-.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.hover-lift:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
+
+.tracking-wide {
+    letter-spacing: 1.5px;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
 
 .profile-img-wrapper {
     transform: rotate(3deg);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .profile-img-wrapper:hover {
     transform: rotate(0deg) scale(1.02);
 }
-.tracking-wide { letter-spacing: 1px; }
 
-.timeline-dot { transition: background-color 0.3s ease, transform 0.3s ease; }
-.timeline-card { transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.tracking-wide {
+    letter-spacing: 1px;
+}
+
+.timeline-dot {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
 
 .hover-timeline-item:hover .timeline-dot {
     background-color: var(--bs-primary) !important;
     transform: translateX(-50%) scale(1.2) !important;
 }
+
 .hover-timeline-item:hover .timeline-card {
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.1)!important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1) !important;
     transform: translateY(-3px);
 }
-.service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.service-card:hover { transform: translateY(-10px); box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; }
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+@media (max-width: 768px) {
+    #breadcamb-section h1 {
+        font-size: 42px !important;
+    }
+}
+.active{
+    color: black !important;
+}
+#header-section li a:hover{
+    color: black !important;
+    border-bottom: black solid 2px !important;
+}
